@@ -1,13 +1,11 @@
-body{
-  height: 1000px;
-}
+
 .navbar-brand img{
   width: 100px;
 }
 .navbar {
 
   background-image: url("../imgs/menu-bg.png");
-  z-index: 2;
+  z-index: 5;
 }
 .navbar-toggler-icon{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 192,255 , 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -37,6 +35,8 @@ body{
   }
 }
 
+
+
 /* header */
 .header{
   position: relative;
@@ -53,6 +53,7 @@ z-index: 1;
   padding-left: 60px;
   
 }
+
 .welcome::before{
   content: "";
   background-color: #00C0FF;
@@ -88,16 +89,294 @@ z-index: 1;
   cursor: pointer;
   background-color: #00C0FF;
 }
+
 .my-img img{
-  z-index: 1;
+  max-width: 70%;
+  margin: auto;
+  display: block;
 }
 #particles-js{
 
-  position: absolute; /* Use fixed to cover entire viewport */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
 
+}
+/* What I do section */
+.what-do{
+  
+  background-image: url("../imgs/feature-bg.png");
+  background-size: cover;
+  
+}
+.title{
+  position: relative;
+
+}
+.title h2
+{
+
+
+display: inline-block;
+
+}
+.title h2::after{
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 2px;
+  background-color: #868BA1;
+  left: 40%;
+  top: 100%;
+
+}
+
+.title span::after{
+    
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 2px;
+  background-color: #868BA1;
+  left: 52%;
+  top: 100%;
+  
+}
+.title span::before{
+  content: "";
+  position: absolute;
+  width: 3%;
+  height: 2px;
+  background-color: #00C0FF;
+  left: 48.5%;
+  top: 100%;
+    
+}
+.card{
+  background-color: rgba(0, 192, 255, 0.1);
+  height: 100%;
+  transition: transform 0.5s  ;
+}
+.card:hover{
+  transform: translatey(-10px);
+}
+.card .title-icon i{
+  font-size: 30px;
+  color: #00C0FF;
+}
+
+@media screen and (max-width:992px){
+ .card{
+  margin-bottom: 4%;
+  width: 90%;
+ }
+}
+/* my resume section */
+.my-resume{
+  
+  background-image: url("../imgs/my-resume-bg.png");
+  background-size: cover;
+  
+}
+.my-resume .nav-pills{
+
+  background-color: rgba(0,192,255,0.1);
+  border: 1px solid #037DB6;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  font-size: 22px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #081a4a;
+  border-radius: 50rem;
+  
+}
+.nav-pills .nav-link span{
+  position: relative;
+  padding-left: 70px;
+}
+.nav-pills .nav-link span::before{
+
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  
+}
+.my-resume .tab-content{
+  background-color: rgba(0,192,255,0.1);
+  border: 1px solid #037DB6;
+  padding: 8% 5% 3% ;
+  margin-top: -3%;
+}
+
+.tab-content .university,
+.skill,
+.my-info h3{
+  color: #00C0FF;
+}
+.tab-content .year{
+  border: 1px solid #081a4a;
+  padding: 5px 30px;
+  border-radius: 50rem;
+  color: #00C0FF;
+  background-color: #081a4a;
+}
+.des{
+  position: relative;
+}
+.des::after{
+  content: "";
+  background-color: #037DB6;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  
+}
+
+.design .progress , .ui-ux .progress-stacked{
+  height: 2px;
+  animation: progrs80 2s linear forwards;
+  background-color: #037DB6;
+}
+
+.web .progress , .ui-ux .progress-stacked{
+  height: 2px;
+  animation: progrs90 2s linear forwards;
+  background-color: #037DB6;
+}
+
+.ui-ux .progress , .ui-ux .progress-stacked{
+  height: 2px;
+  animation: progrs75 2s linear forwards;
+  background-color: #037DB6;
+}
+.mobile .progress , .development .progress-stacked{
+  height: 2px;
+  animation: progrs85 2s linear forwards;
+  background-color: #037DB6;
+}
+@keyframes progrs90 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progrs85 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progrs80 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes progrs75 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skill-border{
+  border: 1px solid #034C80;
+  max-width: 45%;
+}
+.web .skill{
+  padding-right: 9%;
+  
+}
+.mobile .skill{
+  padding-right: 14%;
+}
+.design .skill{
+  padding-right: 19%;
+}
+.design .skill{
+  padding-right: 19%;
+}
+.ui-ux .skill{
+  padding-right: 24%;
+ }
+.skill-value{
+  position: relative;
+  left: -93%;
+  animation: value-move  2s linear forwards;
+}
+@keyframes value-move{
+  0% {
+    left: -93%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.my-info{
+  position: relative;
+  max-width: 45%;
+}
+.my-info::after{
+  content: "";
+  background-color: #037DB6;
+  width: 92%;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+}
+
+@media screen and (max-width:992px){
+  .my-resume .nav-pills{
+    width: 90%;
+    font-size: 16px;
+  }
+  .my-resume .tab-content{
+    padding: 15% 5% 3%;
+    width: 90%;
+    margin: -9% auto 0;
+  }
+  .bio-card:nth-child(2){
+    margin-top: 5%;
+  }
+  .skill-border{
+    max-width: 94%;
+    margin: 0 7px;
+  }
+  .my-info{
+    max-width: 87%;
+    margin-bottom: 6%;
+  }
+
+}
+
+@media screen and (max-width:576px){
+  .my-info{
+    max-width: 87%;
+    flex-direction: column;
+    
+    
+  }
+  .my-info::after{
+    left: 12%;
+  }
+  
+  .email span{
+    margin-left: 18%;
+  }
 }
