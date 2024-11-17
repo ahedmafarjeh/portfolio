@@ -1,6 +1,28 @@
 body{
   overflow-x: hidden;
 }
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #00C0FF;
+  pointer-events: none;
+  z-index: 6;
+  transition: transform 0.1s ease-out;
+}
+.center{
+  position: absolute;
+  
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00C0FF;
+  pointer-events: none;
+  z-index: 6;
+  transition: transform 0.1s ease-out;
+}
 .navbar-brand img {
   width: 100px;
 }

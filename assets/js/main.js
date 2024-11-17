@@ -1,3 +1,16 @@
+// to make circle follow the mouse cursor movement
+const circle = document.querySelector('.circle');
+const center = document.querySelector('.center');
+document.addEventListener('mousemove', (e) => {
+  circle.style.left = `${e.pageX - circle.offsetWidth / 2}px`;
+  circle.style.top = `${e.pageY - circle.offsetHeight / 2}px`;
+  center.style.left = `${e.pageX - center.offsetWidth / 2}px`;
+  center.style.top = `${e.pageY - center.offsetHeight / 2}px`;
+  
+});
+
+
+
 // for navbar effects
 window.addEventListener('scroll', function() {
   const navbar = document.querySelector(".navbar");
