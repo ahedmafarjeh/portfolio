@@ -23,6 +23,13 @@ body{
   z-index: 6;
   transition: transform 0.1s ease-out;
 }
+@media screen and (max-width:992px) {
+  .circle,
+  .center{
+    display: none;
+  }
+}
+/* navbr */
 .navbar-brand img {
   width: 100px;
 }
