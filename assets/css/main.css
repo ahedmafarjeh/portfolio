@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .navbar-brand img {
   width: 100px;
 }
@@ -55,6 +58,7 @@
 }
 
 .welcome {
+
   color: #00C0FF;
   position: relative;
   padding-left: 60px;
@@ -120,6 +124,12 @@
   height: 100%;
   z-index: -1;
 
+}
+
+@media screen and (max-width:992px) {
+  .welcome{
+    margin-top: 100px;
+  }
 }
 
 /* What I do section */
@@ -526,8 +536,12 @@
 .proj-img:hover::after {
   opacity: 1;
 }
-.proj-img:hover a h3{
-  color: red;
+.proj-title  h3{
+  color: white;
+  transition: color 0.5s;
+}
+.proj-title  h3:hover{
+  color: #00C0FF;
 }
 
 /* contact me section */
@@ -540,6 +554,9 @@
 }
 .social-info .social{
   background-color: rgba(0, 192, 255, 0.1);
+}
+.social-info a i:hover{
+  color: #00C0FF;
 }
 .my-form{
   background-color:rgba(4, 8, 54, 0.3);
@@ -569,6 +586,7 @@
 .copyright{
   color: #00c0ff;
 }
+
 .footer-end{
   /* d-flex flex-column align-items-end */
   display: flex;
@@ -593,7 +611,7 @@
     align-items: center;
     margin-top: 10px;
   }
-  .nav{
+  .footer .nav{
     flex-wrap: nowrap;
   }
 }

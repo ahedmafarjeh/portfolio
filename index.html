@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
+<body >
 
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg ">
@@ -30,22 +30,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Service</a>
+            <a class="nav-link" href="#services">Service</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#overview">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -55,7 +55,7 @@
 
   <!-- header -->
 
-  <header class="header">
+  <header id="home" class="header">
     <div id="particles-js"></div>
     <div class="container ">
       <div class=" content row h-100 d-flex justify-content-center align-items-center">
@@ -68,9 +68,14 @@
             I also develop mobile applications using Flutter.</p>
           <div class="social-accounts-details d-flex align-items-center gap-3">
             <button type="button" class=" py-2 px-4 rounded-pill me-2">More About Me</button>
-            <div class="social"><i class="fa-brands fa-facebook-f fa-sm"></i></div>
-            <div class="social"><i class="fa-brands fa-linkedin-in"></i></div>
-            <div class="social"><i class="fa-brands fa-instagram"></i></div>
+            <div class="social"><a target="_blank" href="https://www.facebook.com/ahed.mafarjeh" class="text-white"><i
+                  class="fa-brands fa-facebook-f fa-sm"></i></a></div>
+            <div class="social"><a target="_blank"
+                href="https://www.linkedin.com/in/ahed-mafarjeh-bb75522b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                class="text-white"><i class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="social"><a target="_blank"
+                href="https://www.instagram.com/ahedmafarjeh/profilecard/?igsh=MWc1MnVtMWFxc2l5eg=="
+                class="text-white"><i class="fa-brands fa-instagram"></i></a></div>
 
 
           </div>
@@ -88,13 +93,13 @@
 
   <!-- main sections -->
   <main>
-    <section class="what-do  py-5">
+    <section id="services" class="what-do  py-5">
       <div class="container">
         <div class="title text-center" data-aos="zoom-in">
           <h2 class="text-white  mt-5 pt-5">What I Do</h2>
           <span></span>
         </div>
-        <div class="row pt-5">
+        <div class="row g-4 pt-5">
           <div class="col-lg-4">
             <div class="card text-start p-4" data-aos="fade-right">
               <div class="card-body">
@@ -132,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="row pt-4">
+        <div class="row g-4 pt-4">
           <div class="col-lg-4">
             <div class="card text-start p-4" data-aos="fade-right">
               <div class="card-body">
@@ -173,7 +178,7 @@
       </div>
     </section>
 
-    <section class="my-resume">
+    <section id="about" class="my-resume">
       <div class="container py-5">
         <div class="title text-center" data-aos="zoom-in" data-aos-duration="2000">
           <h2 class="text-white mt-5 pt-5">My Resume</h2>
@@ -369,7 +374,7 @@
 
     </section>
 
-    <section class="overview">
+    <section id="overview" class="overview">
       <div class="container py-5">
         <div class="title text-center" data-aos="zoom-in" data-aos-duration="2000">
           <h2 class="text-white mt-5 pt-5">Overview</h2>
@@ -387,7 +392,7 @@
                 Whether I'm working on new projects or improving existing ones, I always focus on creating efficient and
                 reliable applications that provide a great user experience.
                 I have a strong foundation in HTML, CSS, and JavaScript, as well as experience with some popular
-                frameworks like React. I also have experience with backend technologies like Django. 
+                frameworks like React. I also have experience with backend technologies like Django.
                 I'm always looking for opportunities to learn and improve my skills.
                 In the upcoming slides, you'll find programming and design languages.
               </p>
@@ -475,133 +480,150 @@
 
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container">
         <div class="title text-center" data-aos="zoom-in" data-aos-duration="2000">
           <h2 class="text-white mt-5 pt-5">My Projects</h2>
           <span></span>
         </div>
         <div class="row py-5">
-          <div class="col-lg-4 d-flex flex-column  gap-2">
+          <div class="col-lg-4 d-flex flex-column  gap-2" data-aos="fade-right" data-aos-duration="2000">
             <div class="proj-img ">
               <img src="./assets/imgs/insta2.jpg" class="img-fluid" alt="">
 
-            </div>      
-            <a href="https://github.com/ahedmafarjeh/instegram-app" 
-            class="text-decoration-none"
-            target="_blank">    
-            <h3 class="text-white">Instagram App</h3>
-            </a>
-            <p class="text-white-50">It is a mobile app, It's Like Instagram, so you can write any post,
-              or follow or search a friend,
-              and you can edit your info.
-            </p>
+            </div>
+            <div class="proj-title">
+              <a href="https://github.com/ahedmafarjeh/instegram-app" class="text-white text-decoration-none"
+                target="_blank">
+                <h3>Instagram App</h3>
+              </a>
+            </div>
+            <div class="proj-description">
+              <p class="text-white-50">It is a mobile app, It's Like Instagram, so you can write any post,
+                or follow or search a friend,
+                and you can edit your info.
+              </p>
+            </div>
           </div>
 
-          <div class="col-lg-4  d-flex flex-column gap-2">
+          <div class="col-lg-4  d-flex flex-column gap-2" data-aos="flip-up" data-aos-duration="2000">
             <div class="proj-img">
               <img src="./assets/imgs/blog-thumb2.png" class="img-fluid dd" alt="">
 
-            </div>   
-            <a href="https://ahedmafarjeh.github.io/simple_management_system/" 
-            class="text-decoration-none"
-            target="_blank">      
-            <h3 class="text-white">Product Managment System</h3>
-            </a>   
-            <p class="text-white-50">It is a web app (html,css,js),
-             whatever products, you can manage them easly,
-             so you can add some info about them such as number of products,
-             price, tax, cateogry and you can search them. 
-            </p>
+            </div>
+            <div class="proj-title">
+              <a href="https://ahedmafarjeh.github.io/simple_management_system/" class="text-white text-decoration-none"
+                target="_blank">
+                <h3>Product Managment System</h3>
+              </a>
+            </div>
+            <div class="proj-description">
+              <p class="text-white-50">It is a web app (html,css,js),
+                whatever products, you can manage them easly,
+                so you can add some info about them such as number of products,
+                price, tax, cateogry and you can search them.
+              </p>
+            </div>
           </div>
 
 
 
-          <div class=" proj-item  col-lg-4 d-flex flex-column gap-2">
+          <div class=" proj-item  col-lg-4 d-flex flex-column gap-2" data-aos="fade-left" data-aos-duration="2000">
             <div class="proj-img">
               <img src="./assets/imgs/img3.jpg" class="img-fluid " alt="">
-              
+
             </div>
-            <a href="https://ahedmafarjeh.github.io/simple_ecommerce_front_end/" 
-               class="text-decoration-none">
-              <h3 class="text-white">Product Browser</h3>
-            </a>
-            <p class="text-white-50">It is a web app,
-              you can search for any product, and you can see all the products,
-              also you can see the products of specific category.
-            </p>
+            <div class="proj-title">
+              <a href="https://ahedmafarjeh.github.io/simple_ecommerce_front_end/"
+                class="text-white text-decoration-none">
+                <h3>Product Browser</h3>
+              </a>
+            </div>
+            <div class="proj-description">
+              <p class="text-white-50">It is a web app,
+                you can search for any product, and you can see all the products,
+                also you can see the products of specific category.
+              </p>
+            </div>
           </div>
 
         </div>
       </div>
     </section>
 
-    <section class="contace-me">
+    <section id="contact" class="contace-me">
       <div class="container py-5">
-          <div class="row g-5">
+        <div class="row g-5">
 
-            <div class="col-lg-4 d-flex flex-column gap-5 ">
-              <h2 class="text-white fs-4">Contact Info</h2>
-              <div class="mail d-flex gap-4">
-                <img src="./assets/imgs/contact me/mail.png" alt="mail icon">
-                <div class="description d-flex flex-column  ">
-                  <p class="text-white-50">MAIL US</p>
-                  <p class="email-value">ahedmafarjeh10@gmail.com</p>
-                </div>
-              </div>
-    
-              <div class="phone d-flex gap-4">
-                <img src="./assets/imgs/contact me/phone.png" alt="phone icon">
-                <div class="description d-flex flex-column   ">
-                  <p class="text-white-50">CONTACT US</p>
-                  <p class="email-value">+970592325076</p>
-                </div>
-              </div>
-    
-              <div class="location d-flex gap-4">
-                <img src="./assets/imgs/contact me/location.png" alt="location icon">
-                <div class="description d-flex flex-column   ">
-                  <p class="text-white-50">LOCATION</p>
-                  <p class="email-value">Palestine - Ramallah</p>
-                </div>
-              </div>
-    
-              <div class="social-info d-flex flex-column gap-3">
-                <h2 class="text-white fs-4">Social Info</h2>
-                <div class="social-accounts-details d-flex align-items-center gap-3">
-                  <div class="social"><i class="fa-brands fa-facebook-f fa-sm"></i></div>
-                  <div class="social"><i class="fa-brands fa-linkedin-in"></i></div>
-                  <div class="social"><i class="fa-brands fa-instagram"></i></div>
-      
-      
-                </div>
+          <div class="col-lg-4 d-flex flex-column gap-5" data-aos="fade-right" data-aos-duration="2000">
+            <h2 class="text-white fs-4">Contact Info</h2>
+            <div class="mail d-flex gap-4">
+              <img src="./assets/imgs/contact me/mail.png" alt="mail icon">
+              <div class="description d-flex flex-column  ">
+                <p class="text-white-50">MAIL US</p>
+                <p class="email-value">ahedmafarjeh10@gmail.com</p>
               </div>
             </div>
-    
-            <div class="col-lg-8 my-form py-5 px-5">
-              <h2 class="text-white">Let’s Work Together.</h2>
-              <form class="row g-4">
-                <div class="col-md-6">
-                  <input type="text" class="form-control text-white"  id="fname" placeholder="First Name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control text-white"  id="lname" placeholder="Last Name">
-                </div>
-                <div class="col-12">
-                  <input type="email" class="form-control text-white"  id="email" placeholder="Email">
-                </div>
-                <div class="col-12">
-                  <textarea class="form-control text-white" style="resize: none;" rows="8"  id="msg" placeholder="Message"></textarea>
-                </div>
-              
-                <div class="col-12">
-                  <button type="submit" onclick="sendMail()" class="w-100">Send Message</button>
-                </div>
-              </form>
+
+            <div class="phone d-flex gap-4">
+              <img src="./assets/imgs/contact me/phone.png" alt="phone icon">
+              <div class="description d-flex flex-column   ">
+                <p class="text-white-50">CONTACT US</p>
+                <p class="email-value">+970592325076</p>
+              </div>
             </div>
 
+            <div class="location d-flex gap-4">
+              <img src="./assets/imgs/contact me/location.png" alt="location icon">
+              <div class="description d-flex flex-column   ">
+                <p class="text-white-50">LOCATION</p>
+                <p class="email-value">Palestine - Ramallah</p>
+              </div>
+            </div>
 
+            <div class="social-info d-flex flex-column gap-3">
+              <h2 class="text-white fs-4">Social Info</h2>
+              <div class="social-accounts-details d-flex align-items-center gap-3">
+                <div class="social"><a target="_blank" href="https://www.facebook.com/ahed.mafarjeh"
+                    class="text-white"><i class="fa-brands fa-facebook-f fa-sm"></i></a></div>
+                <div class="social"><a target="_blank"
+                    href="https://www.linkedin.com/in/ahed-mafarjeh-bb75522b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    class="text-white"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                <div class="social"><a target="_blank"
+                    href="https://www.instagram.com/ahedmafarjeh/profilecard/?igsh=MWc1MnVtMWFxc2l5eg=="
+                    class="text-white"><i class="fa-brands fa-instagram"></i></a></div>
+
+
+
+              </div>
+            </div>
           </div>
+
+          <div class="col-lg-8 my-form py-5 px-5 " data-aos="fade-left" data-aos-duration="1000">
+            <h2 class="text-white mb-5">Let’s Work Together.</h2>
+            <form class="row g-4">
+              <div class="col-md-6">
+                <input type="text" class="form-control text-white" id="fname" placeholder="First Name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control text-white" id="lname" placeholder="Last Name">
+              </div>
+              <div class="col-12">
+                <input type="email" class="form-control text-white" id="email" placeholder="Email">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control text-white" style="resize: none;" rows="8" id="msg"
+                  placeholder="Message"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button class="w-100" onclick="sendMail()">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
       </div>
     </section>
 
@@ -616,20 +638,20 @@
         </div>
 
         <div class="col-lg-4  d-flex flex-column align-items-center gap-3">
-        <div class="footer-title">
-          <h2 class="text-white ">Let’s Talk?</h2>
+          <div class="footer-title">
+            <h2 class="text-white ">Let’s Talk?</h2>
 
-        </div>
-        <div class="links">
-          <nav class="nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
-        </div>
+          </div>
+          <div class="links">
+            <nav class="nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Contact</a>
+            </nav>
+          </div>
           <div class="copyright">
-            <p >&copy; All rights reserved by Unique-Theme</p>
+            <p>&copy; All rights reserved by Unique-Theme</p>
 
           </div>
 
@@ -658,19 +680,17 @@
   <script src="./particles.js"></script>
   <script src="./app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script> -->
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
   <script type="text/javascript">
-    (function(){
-       emailjs.init({
-         publicKey: "eNZB0xPE6Ye-ARPil",
-       });
+    (function () {
+      emailjs.init({
+        publicKey: "eNZB0xPE6Ye-ARPil",
+      });
     })();
- </script>
+  </script>
+
 
   <script src="./assets/js/main.js"></script>
 </body>

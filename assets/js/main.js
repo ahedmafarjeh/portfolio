@@ -42,16 +42,11 @@ age_element.innerHTML = my_age;
 
 // configure email js
 function sendMail(){
-  emailjs.send("service_slkd34a","template_oxuayhb",{
-    from_name: "ahmad",
-    email_id: "ahmad@gmail.com",
-    message: "test message",
-    });
-  // let params={
-  //   from_name: document.querySelector("#fname").value + document.querySelector("#lname").value,
-  //   email_id: document.querySelector("#email").value,
-  //   message: document.querySelector("#msg").value,
-  // };
-  // console.log(params.from_name + " " + params.email_id + " " + params.message)
-  // emailjs.send("service_slkd34a","template_oxuayhb",params).then(alert("Email Sent ☻"));
+  let params={
+    from_name: document.querySelector("#fname").value + document.querySelector("#lname").value,
+    email_id: document.querySelector("#email").value,
+    message: document.querySelector("#msg").value,
+  };
+  console.log(params.from_name + " " + params.email_id + " " + params.message)
+  emailjs.send("service_slkd34a","template_oxuayhb",params).then(alert("Email Sent"));
 }
