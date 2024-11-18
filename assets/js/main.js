@@ -51,8 +51,11 @@ const my_job = new Typed('#my-job', {
 });
 
 // initate aos library for section animation
-AOS.init();
-
+function initAOS() {
+  AOS.init();
+  
+}
+initAOS();
 // calculate my age
 age_element = document.querySelector(".age span");
 curren_date = new Date().getTime();
@@ -69,7 +72,6 @@ function sendMail(){
     email_id: document.querySelector("#email").value,
     message: document.querySelector("#msg").value,
   };
-  //  emailjs.send("service_slkd34a","template_oxuayhb",params).then(alert("Email Sent"));
   emailjs.send('service_slkd34a', 'template_oxuayhb', params)
 .then(function(response) {
     alert("email sent successfully")

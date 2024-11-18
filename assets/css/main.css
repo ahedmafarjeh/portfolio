@@ -22,6 +22,13 @@ body{
 .go-to-top:hover{
   cursor: pointer;
 }
+@media (max-width: 1370px) {
+  [data-aos] {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
 @keyframes shadow {
   0% {
     box-shadow: 0 0 0px #00c0ff;
@@ -58,6 +65,9 @@ body{
   .center,
   .go-to-top{
     display: none;
+  }
+  .animate-responsive {
+    animation: none !important; /* Disable the animation */
   }
 }
 /* navbr */
@@ -548,19 +558,23 @@ body{
 .overview {
   background-image: url("../imgs/testimonial.png");
   background-size: cover;
+  
 }
 
 .carousel-item,
 .brf-overview {
   padding: 10% 5%;
-  height: 400px;
+  min-height: 450px;
+
   background-color: rgba(0, 192, 255, 0.1);
+  
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: #00c0ff4d;
 }
+
 
 /* projects section */
 .projects {
