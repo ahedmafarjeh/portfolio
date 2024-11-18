@@ -1,3 +1,12 @@
+/go to up/
+up_button = document.querySelector(".go-to-top");
+  up_button.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  }); 
+
 // to make circle follow the mouse cursor movement
 const circle = document.querySelector('.circle');
 const center = document.querySelector('.center');
@@ -60,6 +69,5 @@ function sendMail(){
     email_id: document.querySelector("#email").value,
     message: document.querySelector("#msg").value,
   };
-  console.log(params.from_name + " " + params.email_id + " " + params.message)
   emailjs.send("service_slkd34a","template_oxuayhb",params).then(alert("Email Sent"));
 }
