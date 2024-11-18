@@ -65,7 +65,7 @@ age_element.innerHTML = my_age;
 // configure email js
 function sendMail(){
   let params={
-    from_name: document.querySelector("#fname").value + document.querySelector("#lname").value,
+    from_name: document.querySelector("#fname").value +" "+ document.querySelector("#lname").value,
     email_id: document.querySelector("#email").value,
     message: document.querySelector("#msg").value,
   };
