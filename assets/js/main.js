@@ -1,3 +1,20 @@
+
+  // This script collapses the navbar when a link is clicked in small screen
+   document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      });
+    });
+  });
+
+
+
 /go to up/
 up_button = document.querySelector(".go-to-top");
   up_button.addEventListener('click', () => {
@@ -66,6 +83,9 @@ my_age = Math.floor(days / 365);
 age_element.innerHTML = my_age;
 
 // configure email js
+
+
+  
 function sendMail(){
   let params={
     from_name: document.querySelector("#fname").value +" "+ document.querySelector("#lname").value,

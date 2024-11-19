@@ -15,10 +15,48 @@
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body >
+<body>
 
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Ahed Mafarjeh</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Welcome!
+            My name is Ahed Mufarjah, and I live in the village of Beit Liqia in Ramallah (Palestine).
+            I studied at school in my village, Beit Liqia, the village where I was raised and grew up. Then I moved on
+            to high school, also in my village, Beit Liqia.
+            At that time, I loved computers and working with them. So when I went to university, I chose the field of
+            Computer Engineering at the Birzeit University, which was a turning point in my personality and
+            helped me gain new skills.
+            I love programming very much, especially web programming and designing web pages. I know several programming
+            languages such as Python, C, Java, JavaScript, Dart, Shell Script, and I also have knowledge of some
+            frameworks and the Linux system.
+            In addition to programming, I love practicing sports, especially weightlifting and football.
+             <br>
+             <span class="text-danger">All Love ♥</span>
+          </p>
+          <img src="./assets/imgs/ahed.jpg" alt="ahed mafarjeh" class="img-fluid w-100">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- move to up button -->
   <div class="go-to-top">
-     <i class="fa-solid fa-arrow-up"></i>
+    <i class="fa-solid fa-arrow-up"></i>
   </div>
   <!-- mouse cursor -->
   <div class="circle "></div>
@@ -34,6 +72,7 @@
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 ">
           <li class="nav-item">
@@ -64,7 +103,7 @@
 
   <header id="home" class="header">
     <div id="particles-js"></div>
-    <div class="container ">
+    <div class="container mt-5 ">
       <div class=" content row h-100 d-flex justify-content-center align-items-center">
         <div class="col-lg-6 ">
           <p class="welcome">Welcome to Ahed Dev</p>
@@ -74,7 +113,13 @@
             I work on building very attractive web pages that captivate users.<br>
             I also develop mobile applications using Flutter.</p>
           <div class="social-accounts-details d-flex align-items-center gap-3">
-            <button type="button" class=" py-2 px-4 rounded-pill me-2">More About Me</button>
+            <button type="button" class=" btn btn-primary py-2 px-4 rounded-pill me-2" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">More About Me</button>
+
+
+
+
+
             <div class="social"><a target="_blank" href="https://www.facebook.com/ahed.mafarjeh" class="text-white"><i
                   class="fa-brands fa-facebook-f fa-sm"></i></a></div>
             <div class="social"><a target="_blank"
@@ -103,7 +148,7 @@
     <section id="services" class="what-do  py-5">
       <div class="container">
         <!-- -->
-        <div class="title text-center animate-responsive" data-aos="zoom-in" > 
+        <div class="title text-center animate-responsive" data-aos="zoom-in">
           <h2 class="text-white  mt-5 pt-5">What I Do</h2>
           <span></span>
         </div>
@@ -150,7 +195,7 @@
         <div class="row g-4 pt-4">
           <div class="col-lg-4">
             <!-- -->
-            <div class="card text-start p-4 animate-responsive" data-aos="fade-right" >
+            <div class="card text-start p-4 animate-responsive" data-aos="fade-right">
               <div class="card-body">
                 <div class="title-icon d-flex justify-content-start align-items-center text-white gap-4">
                   <i class="fa-solid fa-laptop-code"></i>
@@ -395,12 +440,12 @@
 
     <section id="overview" class="overview">
       <div class="container py-5">
-        
+
         <div class="title text-center" data-aos="zoom-in" data-aos-duration="2000">
           <h2 class="text-white mt-5 pt-5">Overview</h2>
           <span></span>
         </div>
-        
+
         <div class="row  mt-5 g-5" data-aos="zoom-in" data-aos-duration="2000">
           <div class="col-lg-6 box">
 
@@ -509,7 +554,7 @@
         </div>
         <div class="row py-5">
           <!--  -->
-          <div class="col-lg-4 d-flex flex-column  gap-2"  data-aos="fade-right" data-aos-duration="2000">
+          <div class="col-lg-4 d-flex flex-column  gap-2" data-aos="fade-right" data-aos-duration="2000">
             <div class="proj-img ">
               <img src="./assets/imgs/insta2.jpg" class="img-fluid" alt="">
 
@@ -621,7 +666,7 @@
               </div>
             </div>
           </div>
-<!--  -->
+          <!--  -->
           <div class="col-lg-8 my-form py-5 px-5 " data-aos="fade-left" data-aos-duration="1000">
             <h2 class="text-white mb-5">Let’s Work Together.</h2>
             <form class="row g-4">
@@ -681,7 +726,7 @@
         </div>
 
         <div class="col-lg-4 footer-end ">
-          <button type="button" class=" py-3 px-5 rounded-pill ">Let's Chat</button>
+          <button type="button" class=" btn btn-primary py-3 px-5 rounded-pill ">Let's Chat</button>
 
         </div>
       </div>
