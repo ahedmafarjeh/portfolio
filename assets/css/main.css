@@ -1,3 +1,27 @@
+:root{
+  --main-color:#00C0FF;
+  --secondary-color:#040837;
+}
+/* Style the scrollbar itself */
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color); 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color); 
+  border-radius: 10px; 
+}
+
+
+
 body{
   overflow-x: hidden;
 }
@@ -7,7 +31,7 @@ body{
   right: 15px;
   bottom: 10px;
   color: white;
-  background-color: #00C0FF;
+  background-color: var(--main-color);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -31,10 +55,10 @@ body{
 }
 @keyframes shadow {
   0% {
-    box-shadow: 0 0 0px #00c0ff;
+    box-shadow: 0 0 0px var(--main-color);
   }
   100% {
-    box-shadow: 0 0 50px #00c0ff;
+    box-shadow: 0 0 50px var(--main-color);
   }
   
 }
@@ -44,7 +68,7 @@ body{
   height: 50px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid #00C0FF;
+  border: 1px solid var(--main-color);
   pointer-events: none;
   z-index: 6;
   transition: transform 0.1s ease-out;
@@ -55,7 +79,7 @@ body{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #00C0FF;
+  background-color: var(--main-color);
   pointer-events: none;
   z-index: 6;
   transition: transform 0.1s ease-out;
@@ -93,12 +117,12 @@ body{
 
 .nav-link:hover,
 .navbar-nav .nav-link.active:hover {
-  color: #00C0FF;
+  color: var(--main-color);
 }
 
 .scrolled {
 
-  background: #040836;
+  background: var(--secondary-color);
   position: sticky;
   top: 0;
   animation: navbar_animation 0.5s;
@@ -130,7 +154,7 @@ body{
 
 .welcome {
 
-  color: #00C0FF;
+  color: var(--main-color);
   position: relative;
   padding-left: 60px;
 
@@ -139,7 +163,7 @@ body{
 
 .welcome::before {
   content: "";
-  background-color: #00C0FF;
+  background-color: var(--main-color);
   height: 1px;
   width: 50px;
   position: absolute;
@@ -155,20 +179,20 @@ body{
   color: white;
 }
 .social-accounts-details button{
-  background-color: #040837;
-  color: #00C0FF;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
   border: none;
 }
 .modal-body::-webkit-scrollbar {
   width: 8px; /* Adjust the width of the scrollbar */
 }
 .modal-footer>*{
-  background-color: #040837;
-  color: #00C0FF;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 .modal-dialog-scrollable .modal-content{
-  background-color: #040837;
-  color: #00C0FF;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 .modal-body::-webkit-scrollbar-thumb {
   background-color: #007bff; /* Change this to your desired color */
@@ -176,7 +200,7 @@ body{
 }
 .social-accounts-details{
   
-  color: #00C0FF;
+  color: var(--main-color);
   border: none;
 }
 
@@ -186,14 +210,14 @@ body{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #040837;
+  background-color: var(--secondary-color);
   border: 1px solid transparent;
   transition: background-color 0.5s ease-out;
 }
 
 .social:hover {
   cursor: pointer;
-  background-color: #00C0FF;
+  background-color: var(--main-color);
 }
 
 .my-img img {
@@ -282,7 +306,7 @@ body{
   position: absolute;
   width: 3%;
   height: 2px;
-  background-color: #00C0FF;
+  background-color: var(--main-color);
   left: 48.5%;
   top: 100%;
 
@@ -300,7 +324,7 @@ body{
 
 .card .title-icon i {
   font-size: 30px;
-  color: #00C0FF;
+  color: var(--main-color);
 }
 
 @media screen and (max-width:992px) {
@@ -324,7 +348,7 @@ body{
     position: absolute;
     width: 8%;
     height: 2px;
-    background-color: #00C0FF;
+    background-color: var(--main-color);
     left: 46.5%;
     top: 100%;
   }
@@ -392,7 +416,7 @@ body{
 .tab-content .university,
 .skill,
 .my-info h3 {
-  color: #00C0FF;
+  color: var(--main-color);
 }
 
 .tab-content .year {
@@ -647,7 +671,7 @@ body{
   transition: color 0.5s;
 }
 .proj-title  h3:hover{
-  color: #00C0FF;
+  color: var(--main-color);
 }
 
 /* contact me section */
@@ -656,13 +680,13 @@ body{
   background-size: cover;
 }
 .email-value{
-  color: #00C0FF;
+  color: var(--main-color);
 }
 .social-info .social{
   background-color: rgba(0, 192, 255, 0.1);
 }
 .social-info a i:hover{
-  color: #00C0FF;
+  color: var(--main-color);
 }
 .my-form{
   background-color:rgba(4, 8, 54, 0.3);
@@ -696,7 +720,7 @@ body{
   background-size: cover;
 }
 .copyright{
-  color: #00c0ff;
+  color: var(--main-color);
 }
 
 .footer-end{
@@ -707,8 +731,8 @@ body{
 
 }
 .footer-end button {
-  background-color: #040837;
-  color: #00C0FF;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
   border: none;
   padding: 20px;
 }
