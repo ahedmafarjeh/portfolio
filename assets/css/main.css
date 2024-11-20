@@ -245,13 +245,7 @@ body{
 .modal {
   z-index: 1050 !important; /* Higher than the backdrop */
 }
-/* 
-.modal-dialog{
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+
 
 @media screen and (max-width:332px) {
   .social-accounts-details button{
@@ -612,6 +606,9 @@ body{
 
   .email span {
     margin-left: 18%;
+  }
+  .tab-content .year{
+    width: 43%;
   }
 }
 
