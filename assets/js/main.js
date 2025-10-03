@@ -95,7 +95,7 @@ function sendMail(){
   emailjs.send('service_slkd34a', 'template_oxuayhb', params)
 .then(function(response) {
     alert("email sent successfully")
-    document.getElementById('.contace-me form').reset();
+    document.querySelector('.contace-me form').reset();
 }, function(error) {
     console.log('FAILED...', error);
 });
